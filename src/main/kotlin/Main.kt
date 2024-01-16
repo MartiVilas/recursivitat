@@ -8,5 +8,7 @@ fun main() {
     println(calculFactorialDoble(num))
     println(calculFactorialImpres(num))
     println(numerosComposats(num))
+    println(invertirNum(num))
+    println(fibonacci(num))
 
 }

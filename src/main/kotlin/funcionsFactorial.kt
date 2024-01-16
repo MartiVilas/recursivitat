@@ -26,4 +26,18 @@ fun numerosComposats(num:Int,quant:Int=0):Int{
     else numerosComposats(num/10,quant+1)
 }
 
+fun invertirNum(num:Int){
+    if (num<10) print(num)
+    else {
+        print(num%10)
+        invertirNum(num/10)
+    }
+}
+
+fun fibonacci(num:Int):Int{
+    return if (num==0) 0
+        else if (num==1) 1
+    else fibonacci(num-1)+ fibonacci(num-2)
+}
+
 
