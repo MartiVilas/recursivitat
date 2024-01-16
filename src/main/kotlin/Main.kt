@@ -2,13 +2,14 @@ package org.example
 
 fun main() {
 
-    val num:Int= llegirInt()
 
-    println(calculFactorial(num))
-    println(calculFactorialDoble(num))
-    println(calculFactorialImpres(num))
-    println(numerosComposats(num))
-    println(invertirNum(num))
-    println(fibonacci(num))
+
+    println(calculFactorial(4))
+    println(calculFactorialDoble(4))
+    println(calculFactorialImpres(4))
+    println(numerosComposats(10))
+    invertirNum(123456)
+    println()
+    println(fibonacci(12))
 
 }
