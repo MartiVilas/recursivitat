@@ -6,5 +6,7 @@ fun main() {
 
     println(calculFactorial(num))
     println(calculFactorialDoble(num))
+    println(calculFactorialImpres(num))
     println(numerosComposats(num))
+
 }
