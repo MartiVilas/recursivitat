@@ -2,8 +2,6 @@ package org.example
 
 fun main() {
 
-
-
     println(calculFactorial(4))
     println(calculFactorialDoble(4))
     println(calculFactorialImpres(4))
@@ -11,5 +9,5 @@ fun main() {
     invertirNum(123456)
     println()
     println(fibonacci(12))
-
+    println(llegirNumCreixent(123456789))
 }
