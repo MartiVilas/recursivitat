@@ -10,4 +10,5 @@ fun main() {
     println()
     println(fibonacci(12))
     println(llegirNumCreixent(123456789))
+    println(reduccioDeDigits(5699))
 }

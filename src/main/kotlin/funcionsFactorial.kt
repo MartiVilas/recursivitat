@@ -41,6 +41,7 @@ fun fibonacci(num:Int):Int{
  * amb l'anterior fins a compararlos tots. En cas que els números siguin creixents, és a dir que tots els números siguin
  * superiors als números anteriors retorna 'true', en cas contrari retorna 'false'.
  * @author Martí Vilàs, Hugo Alonso.
+ * @since 17/01/2024
  */
 fun llegirNumCreixent(num:Int) : Boolean{
     val MOD=num%10
@@ -55,9 +56,15 @@ fun llegirNumCreixent(num:Int) : Boolean{
 }
 
 
-fun reduccioDeDigits(num:Int){
-
-
+fun reduccioDeDigits(num:Int): Int{
+    var suma=0
+    var ultimDigit=num
+    do {
+        suma+=(ultimDigit%10)
+        ultimDigit/10
+    }while ((ultimDigit/10)!=0)
+   suma+=ultimDigit
+    return suma
 
 }
 
