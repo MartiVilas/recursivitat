@@ -9,6 +9,6 @@ fun main() {
     invertirNum(123456)
     println()
     println(fibonacci(12))
-    println(llegirNumCreixent(123456789))
+    println(llegirNumCreixent(1234))
     println(reduccioDeDigits(5699))
 }

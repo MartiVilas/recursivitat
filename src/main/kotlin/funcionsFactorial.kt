@@ -1,17 +1,35 @@
 package org.example
 
+
+/**
+ * Aquesta funció multiplica el número que toca a partir del número donat, si dones el num '4' llavors multiplicarà
+ * '4' per '3' i aixi restant un fins que ja no hi hagin números per multiplicar.
+ * @author Martí Vilàs
+ * @param  calculFactorial
+ */
 fun calculFactorial(num:Int) : Int{
     val resultat:Int
     if (num <= 1) resultat = 1
     else resultat = num * calculFactorial(num-1)
     return resultat
 }
+
+/**
+ *Aquesta funció fa el mateix que la funcio anterior 'calcuFactorial' però a la hora de multiplicar, multiplicarà primer
+ * número que toqui per si mateix i després pel número seguent. És a dir, si posem '4' fara '4*4' despres farà
+ * '16'*(3*3) i aixi fins que sigui '1*1'.
+ * @author Martí Vilàs
+ */
 fun calculFactorialDoble(num:Int) : Int{
     val resultat:Int
     if (num <= 1) resultat = 1
     else resultat = (num * num) * calculFactorialDoble(num-1)
     return resultat
 }
+
+/***
+ *
+ */
 fun calculFactorialImpres(num:Int) : Int{
     print("$num x ")
     val resultat:Int
@@ -65,6 +83,7 @@ fun reduccioDeDigits(num:Int): Int{
     }while ((ultimDigit/10)!=0)
    suma+=ultimDigit
     return suma
+
 
 }
 
